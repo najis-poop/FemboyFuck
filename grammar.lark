@@ -1,0 +1,14 @@
+%import common.WS
+%ignore WS
+
+start: ins*
+
+?ins: "femboy" -> add
+    | "fuck" -> sub
+    | "gay" -> advance
+    | "bi" -> back
+    | "uwu" -> print
+    | "owo" -> input
+    | twink -> loop
+
+?twink: "twink" ins* "twink"
